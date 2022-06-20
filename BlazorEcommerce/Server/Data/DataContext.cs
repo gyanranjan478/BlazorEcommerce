@@ -34,6 +34,27 @@
                     ImageUrl = "https://upload.wikimedia.org/wikipedia/commons/c/c3/1984first.jpg",
                     Price = 7.99m
                 });
+
+            modelBuilder.Entity<Category>().HasData(
+                new Category
+                {
+                    Id= Guid.NewGuid(),
+                    Name =  "",
+                    Url =""
+                },
+                new Category
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "",
+                    Url = ""
+                }
+                new Category
+                {
+                    Id = Guid.NewGuid(),
+                    Name = "",
+                    Url = ""
+                }
+                );
         }
 
         public DbSet<Product> Products { get; set; }
